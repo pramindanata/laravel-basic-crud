@@ -1,0 +1,342 @@
+*,*::after,*::before{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none!important;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: "Josefin Sans";
+}
+
+.blue{
+	color: #2980b9;
+
+}
+.silver {
+	background: #ecf0f1;
+}
+.border{
+	border:solid;
+}
+.nomargin {
+	margin : 0 !important;
+}
+.nopadding {
+	padding : 0 !important;
+}
+/*--------------------coloring----------------*/
+
+.white-text {
+	color : #fff !important;
+}
+.red-text {
+	color :#2980b9 !important;
+}
+.grey-text {
+	color : #95a5a6 !important;
+}
+.body-full-height body{
+    		height: 100%!important;
+}
+.dark-text {
+	color : #181819 !important;
+}
+.hero-title {
+	 font-size : 3.5em !important;
+	 margin-bottom : 25px;
+ }
+/*--------------------navbar----------------*/
+.timku-navbar{
+	border-radius: 0;
+	background-color: #ffffff;
+}
+
+.navbar-brand{
+	font-family: "Bitter";
+	color: #2980b9;
+}
+.page-header-text{
+	font-family: "Bitter";
+	color: #2980b9;
+}
+.navbar{
+    margin-bottom: 0px;
+  }
+ .nav>li>a{
+ 	color: black!important;
+ 	font-weight: 300;
+ }
+ 
+ .nav>li>a:hover{
+ 	background-color: #2980b9!important;
+ 	color: white!important;
+ 	transition: 0.3s;
+ 	-webkit-transition: 0.3s;
+ 	-moz-transition: 0.3s;
+ }
+
+/*-----------------------------About------------------------------------*/
+
+.about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+	text-align: justify;
+}
+.about>.about-text>h2{
+	text-align: center;
+	margin-bottom: 15px;
+	margin: 0px 0px 25px;
+}
+.team{
+}
+.team>.team-list>div>div{
+	position: relative;
+	padding-top: 50px;
+}
+.team>.team-list>div>div>.front{
+	padding: 0px 15px;
+	position: absolute;
+	width: 100%;
+	height:100%;
+	left: 0px;
+}
+.team>.team-list>div>div>.front>div{
+	height: 100%;
+	background-color:#2980b9;
+	opacity: 0.6;
+	transition: 0.3s;
+	display: flex;
+}
+.team>.team-list>div>div>.front>div>.detail{
+	color: #fff;
+	margin: auto;
+	visibility: hidden;
+		text-align: center;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+.team>.team-list>div>div>.front>div>.detail>h4{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.team>.team-list>div>div>.front>div:hover{
+	opacity: 0.85;
+}
+.team>.team-list>div>div>.front>div:hover>.detail{
+	visibility: visible;
+}
+.team>.team-list>div>div>.img{
+	transition: 0.3s;
+	background-size: 150%;
+	background-repeat: no-repeat;
+    background-position: center center;
+	width: 100%;
+	height: 100%;
+}
+.contact{
+    padding: 50px 0px;
+}
+.contact>div>.map>iframe{
+	height: 450px;
+	width: 100%;
+}
+.contact>div>div{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.contact>div>div>form{
+	margin: 0px
+}
+.contact>div>div>form>div>textarea{
+	resize: vertical;
+	min-height: 150px; 
+}
+
+/*---------------------------header-----------------------------------------------*/
+.header-content {
+	min-height : 650px;
+	background: linear-gradient(rgba(0, 0, 0, 0.53),rgba(0, 0, 0, 0.53)),url('../img/bg.jpg');
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size : cover;
+}
+.jumbotron p {
+    margin-bottom: 25px;
+    font-size: 19px;
+    font-weight: 200;
+}
+.title-section{
+	font-size: 25px !important;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+#login-box input {
+	font-weight: 700;
+}
+/*---------------------------footer-----------------------------------------------*/
+
+footer{
+	background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9));
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* border-top: 1px solid #ddd; */
+    /* border-bottom: 1px solid #ddd; */
+    color: #fefefe;
+    height: 180px;
+}
+footer>div>div:nth-child(1){
+	padding-top: 50px;
+}
+footer>div>div:nth-child(2){
+	padding-top: 50px;
+	text-align: right;
+}
+footer>div>div:nth-child(2)>a{
+	margin-left: 5px;
+}
+/*---------------------------responsivity-----------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+		.header-content {
+			/*height: 500px;*/
+			text-align : center;
+		}	
+		footer{
+		    height: 180px;
+		}
+		footer>div>div:nth-child(1){
+			padding-top: 25px!important;
+			text-align: center;
+		}
+		footer>div>div:nth-child(2){
+			padding-top: 10px!important;
+			text-align: center!important;
+		}
+		footer>div>div:nth-child(2)>a{
+			margin:0 5px;
+		}
+		.search-btn {
+			width : 100%;
+		}
+	}
+/*----------------------------login-------------------------------*/
+
+.background-blue{
+	background-color:#2980b9;
+
+}
+.background-white{
+	background-color: white;
+}
+.slash-bg {
+	-ms-transform: scale(1, 1); /* IE 9 */
+    -webkit-transform: scale(1, 1); /* Safari */
+    transform: scale(1, 1);
+	width: 100%;
+}
+
+.login-brand{
+	font-family: "Bitter";
+	text-align: center;
+	font-size: 28px;
+	width: 100%;
+}
+.register-text{
+	text-align: center;
+	font-size: 14px!important;
+} 
+.login-copyright{
+	color: #ffffff;
+	font-size: 14px;
+	text-align: center;
+} 
+.text-right{
+	text-align: right;
+}
+.text-left{
+	text-align: left;
+}
+.jumbotron{
+	margin-bottom: 10px;
+}
+.content-section {
+	padding : 50px 0 35px;
+}
+
+.description-text {
+	font-weight: 500;
+	font-size: 18px;
+}
+.info-box-danger {
+	padding : 40px 15px;
+	border : 1px solid #efefef;
+	border-top : 3px solid #2980b9;
+	margin-bottom : 20px;
+}
+.shadow-box {
+	box-shadow: 0 2px 4px rgba(221,221,221,0.75);
+	-webkit-box-shadow: 0 2px 4px rgba(221,221,221,0.75);
+	-moz-box-shadow: 0 2px 4px rgba(221,221,221,0.75);
+	transition: 0.2s;
+}
+.shadow-box:hover{
+	box-shadow:0 5px 15px rgba(221,221,221,0.75);
+	-webkit-box-shadow:0 5px 15px rgba(221,221,221,0.75);
+	-moz-box-shadow:0 5px 15px rgba(221,221,221,0.75);
+}
+.content-space {
+	margin : 25px 0;
+}
+.lg-icon {
+	font-size: 4em
+}
+.med-title {
+	font-weight: 800;
+	font-size : 19px;
+}
+
+/*-------------------------- collapse search komunitas --------------------------------*/
+
+.pencarian-lanjutan{
+	margin-top: 10px;
+	font-size: 14px;
+}
+.event-list{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.event-box{
+	margin-bottom: 30px;
+	position: relative;
+}
+.event-title{
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	padding: 4px 15px 0px;
+}
+.event-title>div{
+	height: 100%;
+    background-color: rgba(0, 0, 0, 0.48);
+    display: flex;
+}
+.event-title>div>h3{
+	margin: auto;
+    color: #fff;
+}
+.image-panel{
+	object-fit: cover!important;
+    height: 230px!important;
+    width: 100%;
+    border-top: solid 4px #2980b9;
+}
+.position-relative{
+	position: relative;
+}
